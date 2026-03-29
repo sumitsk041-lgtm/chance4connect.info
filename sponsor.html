@@ -1,113 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sponsorship | Chance 4 Connect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsorship - Chance 4 Connect</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png" height="36" class="me-2" alt="Logo">
+                <b>Chance 4 Connect</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sponsor.html">Sponsor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <h1>Chance 4 Connect</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Upcoming Events</a>
-    <a href="sponsor.html">Sponsor</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-</header>
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,102,204,0.8), rgba(0,102,204,0.8)), url('assets/home.png'); background-size: cover; background-position: center; margin-top: 70px; padding: 100px 20px; text-align: center; color: white;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Sponsorship Opportunities</h1>
+            <p class="lead mb-4">Elevate Your Brand at Premier Virtual & Hybrid Pharma Events</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#packages" class="btn btn-light btn-lg">View Packages</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Become a Sponsor</a>
+            </div>
+        </div>
+    </section>
 
-<section style="padding:50px 20px; background:#ffffff;">
-  <h2 style="color:#0b3c5d; font-size:30px; margin-bottom:15px;">
-    Sponsorship Opportunities
-  </h2>
+    <!-- Sponsorship Intro -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Sponsorship Opportunities</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 mb-4">
+                        <strong>Chance 4 Connect</strong> offers strategic sponsorship opportunities for organizations looking to enhance brand visibility, generate qualified leads, and engage directly with decision-makers across the pharmaceutical, life sciences, intellectual property, and healthcare ecosystem.
+                    </p>
+                    <p class="fs-5">
+                        Our virtual conferences provide sponsors and partners with a focused, high-value platform to showcase expertise, solutions, and thought leadership to a targeted global audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <p style="font-size:17px; max-width:900px;">
-    <strong>Chance 4 Connect</strong> offers strategic sponsorship opportunities
-    for organizations looking to enhance brand visibility, generate qualified
-    leads, and engage directly with decision-makers across the pharmaceutical,
-    life sciences, intellectual property, and healthcare ecosystem.
-  </p>
+    <!-- Sponsorship Packages -->
+    <section class="py-5" id="packages">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-2">Sponsorship Packages</h2>
+            <p class="text-center lead text-muted mb-5">Flexible opportunities across virtual and physical events</p>
+            
+            <div class="row g-4">
+                <!-- Virtual Event Sponsor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card package-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Virtual Event Sponsor</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Website & Registration Branding</li>
+                                <li class="mb-2">✓ Virtual Booth / Expo Listing</li>
+                                <li class="mb-2">✓ Sponsored Speaking Slot</li>
+                                <li class="mb-2">✓ Email & Social Promotions</li>
+                                <li class="mb-2">✓ Delegate Database (Opt-in)</li>
+                                <li class="mb-3">✓ Platform Banner Ads</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary w-100">Get Details</a>
+                        </div>
+                    </div>
+                </div>
 
-  <p style="font-size:16px; max-width:900px;">
-    Our virtual conferences provide sponsors and partners with a focused,
-    high-value platform to showcase expertise, solutions, and thought leadership
-    to a targeted global audience.
-  </p>
+                <!-- Title Sponsor (Premium) -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card package-card package-premium h-100 shadow-lg">
+                        <div class="card-body">
+                            <div class="badge bg-warning text-dark mb-3" style="font-size: 0.9rem;">⭐ Most Premium</div>
+                            <h5 class="card-title fw-bold mb-3">Title Sponsor</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ "Presented By" Event Branding</li>
+                                <li class="mb-2">✓ Main Stage & Backdrop Branding</li>
+                                <li class="mb-2">✓ Opening Keynote Slot</li>
+                                <li class="mb-2">✓ Premium Exhibition Booth</li>
+                                <li class="mb-2">✓ PR & Media Coverage</li>
+                                <li class="mb-3">✓ VIP Networking Access</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-warning w-100 fw-bold">Get Details</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- SPONSOR TIERS -->
-  <div style="margin-top:30px; max-width:900px;">
-    <h3 style="color:#0b3c5d;">Sponsorship Categories</h3>
-    <ul style="font-size:16px; line-height:1.8;">
-      <li>
-        <strong>Gold Sponsor</strong> – Keynote speaking opportunity, premium
-        branding across all event promotions, virtual booth, and delegate
-        database access.
-      </li>
-      <li>
-        <strong>Silver Sponsor</strong> – Panel participation, branding visibility,
-        and virtual booth presence.
-      </li>
-      <li>
-        <strong>Knowledge Partner</strong> – Session branding, content collaboration,
-        and thought leadership positioning.
-      </li>
-    </ul>
-  </div>
+                <!-- Gold Sponsor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card package-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3" style="color: #B8860B;">Gold Sponsor</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Track / Session Sponsorship</li>
+                                <li class="mb-2">✓ Panel Speaking Opportunity</li>
+                                <li class="mb-2">✓ Premium Booth Space</li>
+                                <li class="mb-2">✓ Branding Across Collaterals</li>
+                                <li class="mb-2">✓ Email & Social Promotions</li>
+                                <li class="mb-3">✓ Networking Access</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-warning w-100">Get Details</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- WHY SPONSOR -->
-  <div style="margin-top:30px; max-width:900px;">
-    <h3 style="color:#0b3c5d;">Why Sponsor with Chance 4 Connect</h3>
-    <ul style="font-size:16px; line-height:1.8;">
-      <li>Direct access to industry decision-makers and influencers</li>
-      <li>High-quality lead generation through focused virtual engagement</li>
-      <li>Strong brand visibility before, during, and after the event</li>
-      <li>Association with credible, knowledge-driven industry platforms</li>
-    </ul>
-  </div>
+                <!-- Silver Sponsor -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card package-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3" style="color: #C0C0C0;">Silver Sponsor</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Exhibition Booth Space</li>
+                                <li class="mb-2">✓ Logo on Website & Brochures</li>
+                                <li class="mb-2">✓ Social Media Mentions</li>
+                                <li class="mb-2">✓ On-site Shared Branding</li>
+                                <li class="mb-2">✓ Networking Access</li>
+                                <li class="mb-3">✓ Post-Event Report</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-secondary w-100">Get Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- LOGOS -->
-  <div style="margin-top:35px;">
-    <h3 style="color:#0b3c5d;">Our Sponsors & Partners</h3>
+    <!-- Why Sponsor Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Why Sponsor Chance 4 Connect?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div style="font-size: 2rem; margin-bottom: 15px;">🎯</div>
+                            <h5 class="card-title fw-bold">Targeted Audience</h5>
+                            <p class="card-text">Reach qualified decision-makers and industry leaders in pharma and healthcare.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div style="font-size: 2rem; margin-bottom: 15px;">📈</div>
+                            <h5 class="card-title fw-bold">Maximum ROI</h5>
+                            <p class="card-text">Achieve high-impact visibility and lead generation opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div style="font-size: 2rem; margin-bottom: 15px;">🌍</div>
+                            <h5 class="card-title fw-bold">Global Reach</h5>
+                            <p class="card-text">Connect with an international audience across multiple time zones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
-      gap:20px;
-      margin-top:20px;
-    ">
-      <div style="border:1px solid #ddd; padding:30px; text-align:center; background:#fafafa;">
-        Sponsor Logo
-      </div>
-      <div style="border:1px solid #ddd; padding:30px; text-align:center; background:#fafafa;">
-        Partner Logo
-      </div>
-      <div style="border:1px solid #ddd; padding:30px; text-align:center; background:#fafafa;">
-        Sponsor Logo
-      </div>
-    </div>
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready to Partner With Us?</h2>
+            <p class="lead mb-4">Contact our sponsorship team to discuss the best package for your organization.</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
+        </div>
+    </section>
 
-    <p style="margin-top:15px; font-style:italic;">
-      Sponsorship opportunities are limited to ensure maximum visibility and value.
-    </p>
-  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <img src="assets/logo.png" height="32" alt="Logo" class="mb-2">
+            <p class="mt-2 mb-0">© 2026 Chance 4 Connect. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-  <!-- CTA -->
-  <div style="margin-top:40px;">
-    <a href="contact.html"
-       style="background:#0b3c5d; color:#ffffff; padding:14px 24px;
-              text-decoration:none; border-radius:4px;">
-      Become a Sponsor
-    </a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Chance 4 Connect. All Rights Reserved.</p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
