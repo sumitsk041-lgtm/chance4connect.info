@@ -1,79 +1,434 @@
+/* ===========================
+   Global Styles
+   =========================== */
+:root {
+    --primary-color: #0066cc;
+    --primary-dark: #003d99;
+    --secondary-color: #f5f5f5;
+    --text-dark: #333;
+    --text-light: #666;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #fff;
 }
 
-header {
-  background: #0b3c5d;
-  color: #fff;
-  padding: 20px;
+/* ===========================
+   Header & Navigation
+   =========================== */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav a {
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: bold;
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
+.navbar-brand b {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* ===========================
+   Sections
+   =========================== */
 section {
-  padding: 40px;
+    position: relative;
 }
 
-h1, h2, h3 {
-  color: #0b3c5d;
+section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
-.event {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 6px;
+section h3 {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
+/* ===========================
+   Cards & Components
+   =========================== */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.15) !important;
+}
+
+.event-card {
+    overflow: hidden;
+}
+
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover img {
+    transform: scale(1.05);
+}
+
+.package-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.package-premium {
+    border-left-width: 6px;
+    transform: scale(1.02);
+}
+
+.service-card {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.2) !important;
+    transform: translateY(-3px);
+}
+
+.strength-card {
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.strength-card:hover {
+    background-color: #e8f1ff !important;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-light {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* ===========================
+   Forms
+   =========================== */
+.form-control,
+.form-select {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+.form-label {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+.display-4,
+.display-5,
+.display-6 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.lead {
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* ===========================
+   Stats Section
+   =========================== */
+.stat-box {
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.2) !important;
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* ===========================
+   Footer
+   =========================== */
 footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 15px;
+    background-color: #1a1a1a;
+    color: #fff;
 }
 
-.btn {
-  display: inline-block;
-  background: #0b3c5d;
-  color: #fff;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 4px;
+footer p {
+    margin: 0;
+    font-weight: 500;
 }
 
-/* FORM */
-.form-box {
-  max-width: 500px;
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 6px;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.form-box input,
-.form-box select,
-.form-box textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+footer a:hover {
+    color: var(--primary-color);
 }
 
-/* LOGOS */
-.logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+/* ===========================
+   Alert Styles
+   =========================== */
+.alert {
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
 }
 
-.logo-box {
-  border: 1px solid #ddd;
-  padding: 30px;
-  text-align: center;
-  background: #fff;
+.alert-info {
+    background-color: #e8f1ff;
+    color: var(--primary-color);
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .display-5 {
+        font-size: 1.8rem;
+    }
+
+    .package-premium {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px;
+        padding: 60px 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .stat-box {
+        margin-bottom: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .event-card img {
+        height: 150px;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        min-height: 250px;
+        padding: 40px 15px !important;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .display-5,
+    .display-6 {
+        font-size: 1.4rem;
+    }
+
+    .stat-box h3 {
+        font-size: 2rem;
+    }
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col-md-4,
+    .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    form {
+        padding: 1.5rem !important;
+    }
+
+    .card-body {
+        padding: 1.5rem !important;
+    }
+}
+
+/* ===========================
+   Print Styles
+   =========================== */
+@media print {
+    .navbar,
+    footer,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
 }
