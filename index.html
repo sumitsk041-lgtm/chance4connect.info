@@ -1,75 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <img src="/images/logo.png" alt="Chance 4 Connect Logo">
-  <title>Chance 4 Connect | Global Virtual Pharma Conferences</title>
-  <meta name="description" content="Chance 4 Connect organizes global virtual pharma conferences focused on innovation, digital transformation and regulatory excellence.">
-  <meta name="keywords" content="pharma virtual conference, pharmaceutical events, Chance 4 Connect">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Chance 4 Connect</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.png" height="36" class="me-2" alt="Logo">
+                <b>Chance 4 Connect</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <h1>Chance 4 Connect</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Upcoming Events</a>
-    <a href="sponsor.html">Sponsor</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-</header>
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,102,204,0.7), rgba(0,102,204,0.7)), url('assets/home.png'); background-size: cover; background-position: center; margin-top: 70px; padding: 100px 20px; text-align: center; color: white;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Connecting Global Minds in Pharma & Healthcare</h1>
+            <p class="lead">High-Impact Virtual & Physical Conferences for the Pharmaceutical & Healthcare Industry</p>
+        </div>
+    </section>
 
-<section style="padding:60px 20px; background:#f9fbfd;">
-  <h2 style="font-size:32px; color:#0b3c5d; margin-bottom:20px;">
-    Connecting Innovation, Intellectual Property & Business Growth
-  </h2>
+    <!-- Welcome Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Welcome to Chance 4 Connect</h2>
+            <p class="lead mb-4">The Premier Virtual & Physical Event Platform for the Pharma, Life Sciences, and Healthcare Ecosystem</p>
+            <p class="fs-5 text-muted mb-5">
+                <strong>Chance 4 Connect</strong> is a leading organizer of high-impact Virtual & Physical conferences connecting global pharma and healthcare innovators, leaders, and decision-makers through cutting-edge online events.
+            </p>
 
-  <p style="font-size:18px; max-width:900px;">
-    <strong>Chance 4 Connect</strong> is a global virtual event and knowledge
-    exchange platform dedicated to organizing high-impact conferences for
-    the pharmaceutical, life sciences, and intellectual property ecosystem.
-  </p>
+            <!-- Stats Section -->
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box p-4 bg-white rounded shadow-sm">
+                        <h3 class="display-6 fw-bold text-primary">+30</h3>
+                        <h5>Virtual & Physical Events</h5>
+                        <p class="text-muted small">Organizing impactful events worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box p-4 bg-white rounded shadow-sm">
+                        <h3 class="display-6 fw-bold text-primary">+150</h3>
+                        <h5>Expert Speakers</h5>
+                        <p class="text-muted small">Presenting insights from top industry experts.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box p-4 bg-white rounded shadow-sm">
+                        <h3 class="display-6 fw-bold text-primary">+10,000</h3>
+                        <h5>Industry Professionals</h5>
+                        <p class="text-muted small">Facilitating meaningful connections and discussions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box p-4 bg-white rounded shadow-sm">
+                        <h3 class="display-6 fw-bold text-primary">🤝</h3>
+                        <h5>Sponsor & Partner Engagement</h5>
+                        <p class="text-muted small">Providing high-value visibility for sponsors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <p style="font-size:17px; max-width:900px;">
-    We bring together innovators, industry leaders, legal experts, regulators,
-    startups, investors, and enterprises to explore critical topics such as
-    innovation, IP creation and enforcement, regulatory strategy, and sustainable
-    business growth in a rapidly evolving global landscape.
-  </p>
+    <!-- Upcoming Events Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Upcoming Events</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-sm">
+                        <img src="assets/event1.jpg" class="card-img-top" alt="Global Pharma Innovation Summit">
+                        <div class="card-body">
+                            <h5 class="card-title">Global Pharma Innovation Summit</h5>
+                            <p class="card-text text-primary fw-bold">June 20–21, 2026</p>
+                            <p class="card-text">Explore the latest innovations shaping the pharmaceutical industry.</p>
+                            <a href="events.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-sm">
+                        <img src="assets/event2.jpg" class="card-img-top" alt="Digital Health Transformation Forum">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Health Transformation Forum</h5>
+                            <p class="card-text text-primary fw-bold">July 15–16, 2026</p>
+                            <p class="card-text">Discover digital transformation opportunities in healthcare.</p>
+                            <a href="events.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-sm">
+                        <img src="assets/event3.jpg" class="card-img-top" alt="Clinical Trials Conference">
+                        <div class="card-body">
+                            <h5 class="card-title">Clinical Trials Virtual Conference</h5>
+                            <p class="card-text text-primary fw-bold">August 8–9, 2026</p>
+                            <p class="card-text">Latest updates on clinical trial management and best practices.</p>
+                            <a href="events.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="lead mb-3">Stay informed about our latest global pharma & healthcare conferences</p>
+                <a href="events.html" class="btn btn-warning btn-lg">View All Events</a>
+            </div>
+        </div>
+    </section>
 
-  <div style="margin-top:30px; max-width:900px;">
-    <h3 style="color:#0b3c5d;">What Makes Chance 4 Connect Unique</h3>
-    <ul style="font-size:16px; line-height:1.8;">
-      <li>Expert-led virtual conferences with practical, real-world insights</li>
-      <li>Strong focus on intellectual property, innovation, and compliance</li>
-      <li>Global participation with seamless digital experiences</li>
-      <li>High-value visibility and engagement for sponsors and partners</li>
-    </ul>
-  </div>
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Partner · Sponsor · Participate</h2>
+            <p class="lead mb-4">Join Us in Shaping the Future of Healthcare</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Get Involved</a>
+            <div class="mt-4">
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </section>
 
-  <div style="margin-top:40px;">
-    <a href="events.html"
-       style="background:#0b3c5d; color:#fff; padding:14px 22px;
-              text-decoration:none; border-radius:4px; margin-right:15px;">
-      View Upcoming Events
-    </a>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <img src="assets/logo.png" height="32" alt="Logo" class="mb-2">
+            <p class="mt-2 mb-0">© 2026 Chance 4 Connect. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    <a href="contact.html"
-       style="background:#ffffff; color:#0b3c5d; padding:14px 22px;
-              text-decoration:none; border:2px solid #0b3c5d; border-radius:4px;">
-      Register / Partner With Us
-    </a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Chance 4 Connect. All Rights Reserved.</p>
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
-
