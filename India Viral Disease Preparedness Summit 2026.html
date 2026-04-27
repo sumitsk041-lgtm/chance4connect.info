@@ -5,170 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>India Viral Disease Preparedness Summit 2026</title>
     <style>
-        /* MedHub-inspired Color Palette */
         :root {
             --navy: #002d5f;
-            --accent-blue: #0055a4;
+            --sky-blue: #0ea5e9;
             --white: #ffffff;
-            --light-grey: #f4f7f9;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
+            --slate: #f8fafc;
+            --text: #1e293b;
         }
 
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: var(--light-grey);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--slate); color: var(--text); line-height: 1.6; margin: 0; }
 
-        /* Hero Section */
-        .hero {
-            background-color: var(--navy);
-            color: var(--white);
-            padding: 80px 20px;
-            text-align: center;
-        }
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--navy), #004482); color: white; padding: 80px 20px; text-align: center; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* Layout */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section { margin-bottom: 60px; }
+        .section-title { text-align: center; color: var(--navy); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* Main Container */
-        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        /* Speaker Grid */
+        .speaker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .speaker-card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .speaker-img { width: 120px; height: 120px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; }
+        
+        /* Agenda */
+        .agenda-item { background: white; padding: 20px; border-left: 5px solid var(--sky-blue); margin-bottom: 15px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        
+        /* Sponsor Grid */
+        .sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; align-items: center; justify-items: center; }
+        .sponsor-logo { background: white; padding: 20px; border-radius: 8px; width: 100%; text-align: center; font-weight: bold; color: #94a3b8; border: 1px dashed #cbd5e1; }
 
-        /* Agenda Section Styling */
-        .section-header { border-bottom: 3px solid var(--accent-blue); padding-bottom: 10px; margin-bottom: 20px; color: var(--navy); }
-
-        .agenda-grid { display: grid; gap: 15px; }
-
-        .agenda-item {
-            background: var(--white);
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--accent-blue);
-        }
-
-        .agenda-item h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: var(--navy); }
-        .agenda-item p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
-
-        /* Form Styling */
-        .registration-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-            margin-top: 50px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 14px;
-            margin: 10px 0 20px 0;
-            border: 1px solid #cbd5e1;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1rem;
-        }
-
-        .cta-btn {
-            background: var(--accent-blue);
-            color: white;
-            padding: 16px 30px;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.3s;
-        }
-        .cta-btn:hover { background: #004482; }
-
+        /* Form */
+        .register-card { background: var(--navy); color: white; padding: 40px; border-radius: 12px; }
+        input, select { width: 100%; padding: 15px; margin: 10px 0; border-radius: 6px; border: none; box-sizing: border-box; }
+        .btn { background: var(--sky-blue); color: white; padding: 18px; border: none; width: 100%; font-size: 1.1rem; font-weight: bold; cursor: pointer; border-radius: 6px; }
     </style>
 </head>
 <body>
 
     <header class="hero">
         <h1>India Viral Disease Preparedness Summit 2026</h1>
-        <p>Expert insights on preparedness, prevention, and clinical management strategies.</p>
-        <p><strong>📅 May 26, 2026</strong></p>
+        <p>Expert insights on preparedness, prevention, and clinical management.</p>
     </header>
 
     <main class="container">
-        
-        <section id="agenda">
-            <h2 class="section-header">Webinar Agenda</h2>
-            <div class="agenda-grid">
-                <div class="agenda-item">
-                    <h3>Opening & Context Setting (10 mins)</h3>
-                    <p>Welcome address, viral disease landscape, and preparedness importance in 2026.</p>
+
+        <section class="section">
+            <h2 class="section-title">Keynote Speakers</h2>
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <div class="speaker-img"></div>
+                    <h3>Dr. A. Sharma</h3>
+                    <p>Chief Epidemiologist, ICMR</p>
                 </div>
-                <div class="agenda-item">
-                    <h3>Epidemiological Trends & Surveillance (25 mins)</h3>
-                    <p>Dengue, Chikungunya, H3N2 surge analysis, and IDSP insights.</p>
+                <div class="speaker-card">
+                    <div class="speaker-img"></div>
+                    <h3>Dr. V. Rao</h3>
+                    <p>Infectious Disease Specialist</p>
                 </div>
-                <div class="agenda-item">
-                    <h3>High-Risk Viral Diseases (40 mins)</h3>
-                    <p>Severe dengue, influenza vs COVID, and Nipah outbreak preparedness.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Clinical Management Protocols (30 mins)</h3>
-                    <p>ICMR & WHO guidelines, ICU readiness, and antiviral efficacy.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Diagnostics & Early Detection (20 mins)</h3>
-                    <p>Review of RT-PCR, ELISA, rapid testing, and rural challenges.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Vaccination & Prevention (20 mins)</h3>
-                    <p>COVID boosters, dengue vaccines, and physician-led awareness.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Public Health & Policy (15 mins)</h3>
-                    <p>MoHFW initiatives and national outbreak response strategies.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Future Threats (15 mins)</h3>
-                    <p>Zoonotic risks, climate impact, and AI-driven predictive modeling.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Panel Discussion (20 mins)</h3>
-                    <p>Expert debate: "Are we truly ready for the next viral outbreak?"</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Live Q&A + Case Discussion</h3>
-                    <p>Interactive session addressing attendee-submitted clinical cases.</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Closing Remarks</h3>
-                    <p>Key takeaways and certificate distribution details.</p>
+                <div class="speaker-card">
+                    <div class="speaker-img"></div>
+                    <h3>Prof. L. Mehta</h3>
+                    <p>Public Health Policy Expert</p>
                 </div>
             </div>
         </section>
 
-        <section class="registration-card">
-            <h2 style="margin-top: 0;">Secure Your Attendance</h2>
+        <section class="section">
+            <h2 class="section-title">Full Webinar Agenda</h2>
+            <div class="agenda-item"><h3>09:00 AM - Opening & Context Setting</h3><p>Viral landscape in 2026.</p></div>
+            <div class="agenda-item"><h3>09:10 AM - Epidemiological Trends</h3><p>Dengue, Chikungunya, and IDSP insights.</p></div>
+            <div class="agenda-item"><h3>09:35 AM - High-Risk Viral Diseases</h3><p>Severe dengue, influenza vs COVID.</p></div>
+            <div class="agenda-item"><h3>10:15 AM - Clinical Management</h3><p>ICMR/WHO protocols, ICU readiness.</p></div>
+            <div class="agenda-item"><h3>10:45 AM - Diagnostics</h3><p>RT-PCR, ELISA, and rapid testing.</p></div>
+            <div class="agenda-item"><h3>11:05 AM - Vaccination & Prevention</h3><p>Booster updates and physician awareness.</p></div>
+            <div class="agenda-item"><h3>11:25 AM - Public Health Policy</h3><p>MoHFW initiatives.</p></div>
+            <div class="agenda-item"><h3>11:40 AM - Future Threats</h3><p>Climate change and Zoonotic risks.</p></div>
+            <div class="agenda-item"><h3>11:55 AM - Panel Discussion</h3><p>Are we ready for the next outbreak?</p></div>
+            <div class="agenda-item"><h3>12:15 PM - Q&A</h3><p>Live case discussion.</p></div>
+            <div class="agenda-item"><h3>12:30 PM - Closing Remarks</h3><p>Certificate distribution.</p></div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Proudly Sponsored By</h2>
+            <div class="sponsor-grid">
+                <div class="sponsor-logo">Brand Logo 1</div>
+                <div class="sponsor-logo">Brand Logo 2</div>
+                <div class="sponsor-logo">Brand Logo 3</div>
+                <div class="sponsor-logo">Brand Logo 4</div>
+            </div>
+        </section>
+
+        <section class="register-card" id="register">
+            <h2>Secure Your Seat</h2>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <label>Full Name</label>
-                <input type="text" name="name" required>
-                
-                <label>Professional Email</label>
-                <input type="email" name="email" required>
-                
-                <label>Profession</label>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <select name="profession">
                     <option>Doctor</option>
                     <option>Healthcare Professional</option>
-                    <option>Medical Student</option>
-                    <option>Researcher</option>
+                    <option>Student</option>
                 </select>
-                
-                <button type="submit" class="cta-btn">Register Now</button>
+                <button type="submit" class="btn">Register Now</button>
             </form>
         </section>
 
     </main>
-
 </body>
 </html>
