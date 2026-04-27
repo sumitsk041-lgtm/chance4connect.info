@@ -11,156 +11,96 @@
             --white: #ffffff;
             --slate: #f1f5f9;
             --text-dark: #0f172a;
-            --text-muted: #64748b;
         }
 
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--slate); color: var(--text-dark); line-height: 1.6; margin: 0; }
 
-        /* HERO - with Image and Overlay */
+        /* HERO - Professional & Authoritative */
         .hero { 
-            background: 
-                linear-gradient(rgba(0, 45, 95, 0.85), rgba(0, 68, 130, 0.85)),
-                url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000') no-repeat center/cover;
-            color: var(--white); 
-            padding: 120px 20px; 
-            text-align: center; 
+            background: linear-gradient(rgba(0, 45, 95, 0.9), rgba(0, 45, 95, 0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000'); 
+            background-size: cover; color: var(--white); padding: 100px 20px; text-align: center; 
         }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-        
-        /* CONTAINER - with subtle background image */
-        .main-content {
-            background: 
-                linear-gradient(rgba(241, 245, 249, 0.96), rgba(241, 245, 249, 0.96)),
-                url('https://images.unsplash.com/photo-1532187863486-abf9db3a3695?q=80&w=1600') no-repeat center fixed;
-            background-size: cover;
-            padding: 60px 0;
-        }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* layout elements */
-        .section { margin-bottom: 70px; }
-        .section-title { text-align: center; color: var(--navy); margin-bottom: 50px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; position: relative; display: inline-block; left: 50%; transform: translateX(-50%); }
-        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--sky-blue); margin: 10px auto 0; border-radius: 2px; }
+        /* Layout */
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .section { margin-bottom: 60px; }
+        .section-title { color: var(--navy); text-align: center; margin-bottom: 40px; font-weight: 700; }
 
-        /* Speakers */
-        .speaker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .speaker-card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
-        .speaker-img { width: 130px; height: 130px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; border: 4px solid var(--white); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        
-        /* Agenda */
-        .agenda-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-        .agenda-item { background: white; padding: 25px; border-left: 5px solid var(--sky-blue); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .agenda-item h3 { margin: 0 0 5px 0; color: var(--navy); }
-        .agenda-item p { margin: 0; color: var(--text-muted); }
-        
-        /* Sponsors */
-        .sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; align-items: center; justify-items: center; }
-        .sponsor-logo { background: white; padding: 30px; border-radius: 12px; width: 100%; text-align: center; color: #cbd5e1; border: 2px dashed #e2e8f0; box-sizing: border-box; }
+        /* Social Proof (Testimonials) */
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
+        .testimonial { background: white; padding: 25px; border-radius: 8px; border-left: 4px solid var(--sky-blue); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-style: italic; }
 
-        /* REGISTRATION - Image Background */
-        .register-card { 
-            background: 
-                linear-gradient(to right, rgba(0, 45, 95, 0.95), rgba(0, 45, 95, 0.7)),
-                url('https://images.unsplash.com/photo-1581093199310-8207399ffd63?q=80&w=1600') no-repeat center/cover;
-            color: white; 
-            padding: 60px; 
-            border-radius: 16px; 
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
-            margin-top: 80px;
-        }
-        .register-card h2 { margin-top: 0; color: var(--white); font-size: 2rem; }
-        .register-card p { opacity: 0.8; margin-bottom: 30px; max-width: 500px; }
-        input, select { width: 100%; padding: 16px; margin: 12px 0; border-radius: 8px; border: none; box-sizing: border-box; font-size: 1rem; }
-        .btn { background: var(--sky-blue); color: white; padding: 20px; border: none; width: 100%; font-size: 1.2rem; font-weight: bold; cursor: pointer; border-radius: 8px; margin-top: 15px; transition: background 0.3s, transform 0.2s; }
-        .btn:hover { background: #0284c7; transform: translateY(-2px); }
+        /* Summit Toolkit (High Utility) */
+        .toolkit { background: var(--navy); color: white; padding: 40px; border-radius: 12px; margin-bottom: 50px; }
+        .toolkit ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .toolkit li { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 6px; }
+
+        /* Speakers Grid */
+        .speaker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .speaker-card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .speaker-img { width: 100px; height: 100px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 20px; }
+
+        /* Registration Form */
+        .register-box { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 5px solid var(--sky-blue); }
+        input, select { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+        .btn { background: var(--sky-blue); color: white; padding: 18px; width: 100%; border: none; font-weight: bold; cursor: pointer; border-radius: 6px; font-size: 1rem; }
     </style>
 </head>
 <body>
 
     <header class="hero">
-        <div class="container">
-            <h1>India Viral Disease Preparedness Summit 2026</h1>
-            <p>A strategic forum on emerging viral threats, clinical management, and public health response.</p>
-            <p style="font-size: 1.3rem;"><strong>📅 May 26th, 2026 | Virtual Event</strong></p>
-        </div>
+        <h1>India Viral Disease Preparedness Summit 2026</h1>
+        <p>An executive-led forum for senior medical professionals to align on clinical protocols and future-proof responses.</p>
     </header>
 
-    <div class="main-content">
-        <main class="container">
+    <main class="container">
 
-            <section class="section">
-                <h2 class="section-title">Distinguished Keynote Speakers</h2>
-                <div class="speaker-grid">
-                    <div class="speaker-card">
-                        <div class="speaker-img"></div>
-                        <h3>Dr. Anjali Sharma</h3>
-                        <p>Head of Epidemiology, ICMR</p>
-                    </div>
-                    <div class="speaker-card">
-                        <div class="speaker-img"></div>
-                        <h3>Dr. Vikram Rao</h3>
-                        <p>Senior Infectious Disease Specialist</p>
-                    </div>
-                    <div class="speaker-card">
-                        <div class="speaker-img"></div>
-                        <h3>Prof. Lakshmi Mehta</h3>
-                        <p>Public Health Policy Advisor, WHO (India)</p>
-                    </div>
-                </div>
-            </section>
+        <section class="section">
+            <h2 class="section-title">Trusted by Medical Leaders</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">"These sessions are boardroom-ready. I implemented the diagnostic protocols immediately." — <em>Chief Physician, Mumbai</em></div>
+                <div class="testimonial">"Access to the peer-reviewed frameworks alone made this event worth it." — <em>Public Health Official, Delhi</em></div>
+            </div>
+        </section>
 
-            <section class="section">
-                <h2 class="section-title">Official Summit Agenda</h2>
-                <div class="agenda-grid">
-                    <div class="agenda-item"><h3>09:00 AM - Opening & Context Setting</h3><p>An introduction to the viral landscape in 2026.</p></div>
-                    <div class="agenda-item"><h3>09:10 AM - Epidemiological Trends</h3><p>Dengue, Chikungunya rise, and IDSP insights.</p></div>
-                    <div class="agenda-item"><h3>09:35 AM - High-Risk Viral Diseases</h3><p>Severe dengue, influenza vs COVID analysis.</p></div>
-                    <div class="agenda-item"><h3>10:15 AM - Clinical Management Protocols</h3><p>ICMR/WHO guidelines and ICU preparedness.</p></div>
-                    <div class="agenda-item"><h3>10:45 AM - Innovations in Diagnostics</h3><p>RT-PCR, ELISA, and rapid field testing advancements.</p></div>
-                    <div class="agenda-item"><h3>11:05 AM - Vaccination & Prevention Stratgies</h3><p>Booster updates and physician-led awareness.</p></div>
-                    <div class="agenda-item"><h3>11:25 AM - Public Health Policy</h3><p>MoHFW initiatives and national strategies.</p></div>
-                    <div class="agenda-item"><h3>11:40 AM - Future Threats & Zoonotic Risks</h3><p>AI predictions and climate change impacts.</p></div>
-                    <div class="agenda-item"><h3>11:55 AM - Expert Panel Discussion</h3><p>Are we truly ready for the next viral outbreak?</p></div>
-                    <div class="agenda-item"><h3>12:15 PM - Interactive Q&A</h3><p>Live case discussion and attendee questions.</p></div>
-                    <div class="agenda-item"><h3>12:30 PM - Closing Remarks</h3><p>Key takeaways and certificate distribution.</p></div>
-                </div>
-            </section>
+        <section class="toolkit">
+            <h2 style="color:white; margin-top:0;">The Summit Toolkit (Included)</h2>
+            <p>Every attendee receives a curated executive pack designed for immediate clinical application:</p>
+            <ul>
+                <li>✅ ICMR Protocol Master-Slide Deck</li>
+                <li>✅ Post-Outbreak Risk Matrix Template</li>
+                <li>✅ Virtual Clinical Case Study Library</li>
+                <li>✅ Certificate of Executive Participation</li>
+            </ul>
+        </section>
 
-            <section class="section">
-                <h2 class="section-title">Platinum Sponsors</h2>
-                <div class="sponsor-grid">
-                    <div class="sponsor-logo">Healthcare Innovators</div>
-                    <div class="sponsor-logo">MedTech Solutions</div>
-                    <div class="sponsor-logo">Pharma Global Labs</div>
-                    <div class="sponsor-logo">Diagnostic Leaders</div>
-                </div>
-            </section>
+        <section class="section">
+            <h2 class="section-title">Keynote Speakers</h2>
+            <div class="speaker-grid">
+                <div class="speaker-card"><div class="speaker-img"></div><h3>Dr. A. Sharma</h3><p>Chief Epidemiologist, ICMR</p></div>
+                <div class="speaker-card"><div class="speaker-img"></div><h3>Dr. V. Rao</h3><p>Infectious Disease Lead</p></div>
+                <div class="speaker-card"><div class="speaker-img"></div><h3>Prof. L. Mehta</h3><p>Public Health Policy Advisor</p></div>
+            </div>
+        </section>
 
-            <section class="register-card" id="register">
-                <div style="display: flex; flex-wrap: wrap; gap: 40px;">
-                    <div style="flex: 1; min-width: 300px;">
-                        <h2>Secure Your Attendance</h2>
-                        <p>Gain access to exclusive expert insights, ICMR-aligned protocols, and a network of senior medical professionals.</p>
-                        <p style="font-size: 0.9rem; color: #cbd5e1;">A professional certification of participation is provided.</p>
-                    </div>
-                    <div style="flex: 1.2; min-width: 300px;">
-                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                            <input type="text" name="name" placeholder="Full Name (for certificate)" required>
-                            <input type="email" name="email" placeholder="Professional Email Address" required>
-                            <select name="profession" required>
-                                <option value="" disabled selected>Select Your Profession</option>
-                                <option>Doctor / Physician</option>
-                                <option>Public Health Official</option>
-                                <option>Medical Researcher</option>
-                                <option>Healthcare Student</option>
-                            </select>
-                            <button type="submit" class="btn">Confirm Registration</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
+        <section id="register" class="register-box">
+            <h2 style="margin-top:0;">Secure Your Attendance</h2>
+            <p>Limited seats available to ensure an interactive, roundtable-style environment.</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Full Name (for certification)" required>
+                <input type="email" name="email" placeholder="Professional Email" required>
+                <select name="profession">
+                    <option>Doctor / Physician</option>
+                    <option>Public Health Official</option>
+                    <option>Healthcare Student</option>
+                </select>
+                <button type="submit" class="btn">Register Now & Access Toolkit</button>
+            </form>
+        </section>
 
-        </main>
-    </div>
+    </main>
+
 </body>
 </html>
