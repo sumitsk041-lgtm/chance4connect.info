@@ -3,137 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viral Disease Preparedness Summit 2026</title>
-    
+    <title>India Viral Disease Preparedness Summit 2026</title>
     <style>
+        /* MedHub-inspired Color Palette */
         :root {
-            --navy: #0f172a;
-            --emerald: #0ea5e9;
+            --navy: #002d5f;
+            --accent-blue: #0055a4;
             --white: #ffffff;
-            --slate: #f1f5f9;
-            --text-main: #334155;
+            --light-grey: #f4f7f9;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
         }
 
-        html { scroll-behavior: smooth; }
-        body { 
-            margin: 0; 
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
-            background: var(--slate); 
-            color: var(--text-main); 
-            line-height: 1.7; 
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light-grey);
+            color: var(--text-dark);
+            line-height: 1.6;
         }
 
-        .hero { 
-            background: linear-gradient(135deg, var(--navy), #1e293b); 
-            color: var(--white); 
-            padding: 100px 20px; 
-            text-align: center; 
+        /* Hero Section */
+        .hero {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+        /* Main Container */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        /* Agenda Section Styling */
+        .section-header { border-bottom: 3px solid var(--accent-blue); padding-bottom: 10px; margin-bottom: 20px; color: var(--navy); }
+
+        .agenda-grid { display: grid; gap: 15px; }
+
+        .agenda-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent-blue);
         }
 
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: -1px; }
-        .hero p { opacity: 0.9; font-size: 1.1rem; }
+        .agenda-item h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: var(--navy); }
+        .agenda-item p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
 
-        .container { max-width: 850px; margin: -50px auto 40px auto; padding: 0 20px; }
-
-        .card { 
-            background: var(--white); 
-            padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); 
-            margin-bottom: 24px;
-        }
-
-        h2 { color: var(--navy); margin-top: 0; }
-
-        /* Premium Agenda Styling */
-        details { 
-            border-bottom: 1px solid #e2e8f0; 
-            padding: 20px 0; 
-            cursor: pointer;
-        }
-        summary { 
-            font-weight: 600; 
-            list-style: none; 
-            outline: none; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-        }
-        summary::after { content: '+'; color: var(--emerald); font-size: 1.5rem; }
-        details[open] summary::after { content: '−'; }
-        
         /* Form Styling */
-        input, select { 
-            width: 100%; 
-            padding: 16px; 
-            margin: 10px 0; 
-            border: 2px solid #e2e8f0; 
-            border-radius: 12px; 
+        .registration-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-top: 50px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
             box-sizing: border-box;
             font-size: 1rem;
-            transition: border 0.3s;
         }
-        input:focus { border-color: var(--emerald); outline: none; }
 
-        .cta-button { 
-            display: block;
-            width: 100%;
-            background: var(--emerald); 
-            color: white; 
-            padding: 18px; 
-            border: none; 
-            border-radius: 12px; 
-            font-size: 1.1rem; 
+        .cta-btn {
+            background: var(--accent-blue);
+            color: white;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
             font-weight: bold;
-            cursor: pointer; 
-            transition: transform 0.2s, background 0.3s;
-            margin-top: 20px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
         }
-        .cta-button:hover { background: #0284c7; transform: translateY(-2px); }
+        .cta-btn:hover { background: #004482; }
+
     </style>
 </head>
 <body>
 
     <header class="hero">
         <h1>India Viral Disease Preparedness Summit 2026</h1>
-        <p>Expert-led insights on emerging viral threats and clinical management</p>
-        <p><strong>📅 May 26th, 2026</strong></p>
+        <p>Expert insights on preparedness, prevention, and clinical management strategies.</p>
+        <p><strong>📅 May 26, 2026</strong></p>
     </header>
 
     <main class="container">
-        <section class="card">
-            <h2>📋 Full Webinar Agenda</h2>
-            <details>
-                <summary>Opening & Context Setting (10 mins)</summary>
-                <p>An introduction to the current viral landscape in 2026 and strategic priorities.</p>
-            </details>
-            <details>
-                <summary>Epidemiological Trends (25 mins)</summary>
-                <p>Surveillance data on Dengue, Chikungunya, and emerging respiratory pathogens.</p>
-            </details>
-            <details>
-                <summary>Clinical Management Protocols (30 mins)</summary>
-                <p>Evidence-based guidelines from ICMR & WHO for critical care preparedness.</p>
-            </details>
-            <details>
-                <summary>Panel Discussion: The Future (20 mins)</summary>
-                <p>Interactive Q&A regarding AI-driven diagnostics and zoonotic risks.</p>
-            </details>
+        
+        <section id="agenda">
+            <h2 class="section-header">Webinar Agenda</h2>
+            <div class="agenda-grid">
+                <div class="agenda-item">
+                    <h3>Opening & Context Setting (10 mins)</h3>
+                    <p>Welcome address, viral disease landscape, and preparedness importance in 2026.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Epidemiological Trends & Surveillance (25 mins)</h3>
+                    <p>Dengue, Chikungunya, H3N2 surge analysis, and IDSP insights.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>High-Risk Viral Diseases (40 mins)</h3>
+                    <p>Severe dengue, influenza vs COVID, and Nipah outbreak preparedness.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Clinical Management Protocols (30 mins)</h3>
+                    <p>ICMR & WHO guidelines, ICU readiness, and antiviral efficacy.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Diagnostics & Early Detection (20 mins)</h3>
+                    <p>Review of RT-PCR, ELISA, rapid testing, and rural challenges.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Vaccination & Prevention (20 mins)</h3>
+                    <p>COVID boosters, dengue vaccines, and physician-led awareness.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Public Health & Policy (15 mins)</h3>
+                    <p>MoHFW initiatives and national outbreak response strategies.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Future Threats (15 mins)</h3>
+                    <p>Zoonotic risks, climate impact, and AI-driven predictive modeling.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Panel Discussion (20 mins)</h3>
+                    <p>Expert debate: "Are we truly ready for the next viral outbreak?"</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Live Q&A + Case Discussion</h3>
+                    <p>Interactive session addressing attendee-submitted clinical cases.</p>
+                </div>
+                <div class="agenda-item">
+                    <h3>Closing Remarks</h3>
+                    <p>Key takeaways and certificate distribution details.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="card" id="register">
-            <h2>📝 Secure Your Seat</h2>
+        <section class="registration-card">
+            <h2 style="margin-top: 0;">Secure Your Attendance</h2>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+                
+                <label>Professional Email</label>
+                <input type="email" name="email" required>
+                
+                <label>Profession</label>
                 <select name="profession">
                     <option>Doctor</option>
                     <option>Healthcare Professional</option>
                     <option>Medical Student</option>
+                    <option>Researcher</option>
                 </select>
-                <button type="submit" class="cta-button">Register Now</button>
+                
+                <button type="submit" class="cta-btn">Register Now</button>
             </form>
         </section>
+
     </main>
 
 </body>
