@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Webinar 2026</title>
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #0b3c91;
+            --secondary: #ff6f00;
+            --bg: #f5f7fb;
+            --text: #333;
+        }
+
+        /* Base Styles */
+        html { scroll-behavior: smooth; }
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6; 
+        }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(135deg, var(--primary), #1e88e5); 
+            color: white; 
+            padding: 60px 20px; 
+            text-align: center; 
+        }
+
+        /* Container Section */
+        .section { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        }
+
+        /* Agenda - Accordion Style */
+        details { 
+            background: #f8fbff; 
+            border: 1px solid #e0e7f1; 
+            padding: 14px; 
+            border-radius: 8px; 
+            margin-bottom: 10px; 
+            cursor: pointer; 
+        }
+        summary { font-weight: 600; outline: none; }
+        details[open] summary { color: var(--primary); margin-bottom: 10px; }
+
+        /* Form */
+        form input, form select { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+
+        /* Button */
+        .cta-button { 
+            display: inline-block;
+            background: var(--secondary); 
+            padding: 15px 25px; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 18px; 
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+        }
+        .cta-button:hover { background: #e66300; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>🩺 India Viral Disease Preparedness Summit 2026</h1>
+        <p>Emerging Viral Diseases: Preparedness, Prevention & Clinical Management</p>
+        <p><strong>📅 26th May 2026</strong></p>
+        <a href="#register" class="cta-button">Register Now</a>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>📋 Webinar Agenda</h2>
+            <details>
+                <summary>🕘 Opening & Context Setting (10 mins)</summary>
+                <p>Welcome address, viral disease landscape, and preparedness importance in 2026.</p>
+            </details>
+            <details>
+                <summary>📊 Epidemiological Trends & Surveillance (25 mins)</summary>
+                <p>Dengue & Chikungunya rise, H3N2 surge, COVID tracking, IDSP insights.</p>
+            </details>
+            <details>
+                <summary>🏥 Clinical Management (30 mins)</summary>
+                <p>ICMR & WHO protocols, ICU readiness, and antiviral strategies.</p>
+            </details>
+        </section>
+
+        <section class="section" id="register">
+            <h2>📝 Secure Your Seat</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="profession">
+                    <option>Doctor</option>
+                    <option>Student</option>
+                    <option>Healthcare Professional</option>
+                </select>
+                <button type="submit" class="cta-button">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
