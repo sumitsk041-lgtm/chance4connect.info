@@ -15,23 +15,27 @@
 
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--slate); color: var(--text-dark); line-height: 1.6; margin: 0; }
 
-        /* Hero */
+        /* Hero - Corrected URL path and syntax */
         .hero { 
-            background: linear-gradient(rgba(0, 45, 95, 0.8), rgba(0, 45, 95, 0.8)), <img src="assets/Gemini_Generated_Image_u5x4pyu5x4pyu5x4.png" alt="Hero/Header Background">; 
-            background-size: cover; color: var(--white); padding: 100px 20px; text-align: center; 
+            background: linear-gradient(rgba(0, 45, 95, 0.8), rgba(0, 45, 95, 0.8)), url('assets/Gemini_Generated_Image_u5x4pyu5x4pyu5x4.png'); 
+            background-size: cover; 
+            background-position: center;
+            color: var(--white); 
+            padding: 100px 20px; 
+            text-align: center; 
         }
         .hero h1 { font-size: 2.8rem; margin-bottom: 20px; }
         .hero p { font-size: 1.3rem; opacity: 0.9; max-width: 750px; margin: 0 auto; }
 
-        /* Sections */
-        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        .section-title { color: var(--navy); text-align: center; margin-bottom: 40px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-
         /* Feature Row */
         .feature-row { display: flex; align-items: center; gap: 40px; margin: 60px 0; flex-wrap: wrap; }
         .feature-image { flex: 1; min-width: 300px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .feature-image img { width: 100%; display: block; }
+        .feature-image img { width: 100%; display: block; height: auto; }
         .feature-text { flex: 1.2; min-width: 300px; }
+
+        /* Sections */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .section-title { color: var(--navy); text-align: center; margin-bottom: 40px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 
         /* Agenda Grid */
         .agenda-container { display: flex; flex-direction: column; gap: 15px; }
@@ -58,7 +62,6 @@
         <p>An executive-led forum for senior medical professionals to align on clinical protocols and future-proof responses.</p>
     </header>
 
-    <!-- Strategic Alignment Section -->
     <section style="background: #ffffff; padding: 60px 20px; border-bottom: 1px solid #e2e8f0;">
         <div style="max-width: 900px; margin: 0 auto;">
             <h2 style="color: var(--navy); text-align: center; font-size: 2rem; margin-bottom: 30px;">Why This Curriculum Matters Now</h2>
@@ -78,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Leadership Image Section -->
             <div class="feature-row">
                 <div class="feature-image">
                     <img src="assets/Gemini_Generated_Image_kago5ukago5ukago.png" alt="Executive Medical Leadership">
@@ -88,18 +90,11 @@
                     <p>Connect with directors and department heads to synchronize institutional responses. This summit serves as the bridge between theoretical epidemiological data and practical, bedside ICU management.</p>
                 </div>
             </div>
-
-            <div style="margin-top: 40px; padding: 25px; background: var(--slate); border-radius: 8px; text-align: center;">
-                <p style="margin: 0; font-weight: 600; color: var(--navy);">
-                    "The 2026 Summit agenda is engineered to transform passive information into active institutional readiness."
-                </p>
-            </div>
         </div>
     </section>
 
     <main class="container">
 
-        <!-- Surveillance Image Section -->
         <div class="feature-row" style="margin-bottom: 80px;">
             <div class="feature-text">
                 <h3 style="color: var(--navy);">Real-Time Outbreak Surveillance</h3>
@@ -129,7 +124,7 @@
 
         <section class="toolkit" style="margin-top: 60px;">
             <h2 style="color:white; margin-top:0;">Included Executive Toolkit</h2>
-            <img src="assets/Gemini_Generated_Image_u5x4pyu5x4pyu5x4.png" alt="Toolkit Mockup" style="max-width: 100%; border-radius: 8px; margin-bottom: 25px;">
+            <img src="assets/Gemini_Generated_Image_ev44ncev44ncev44.png" alt="Executive Toolkit Mockup" style="max-width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
             <p>Participants gain immediate access to:</p>
             <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
                 <li style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 6px;">✅ ICMR Master Slide Deck</li>
@@ -147,21 +142,55 @@
         </section>
 
         <section id="register" class="register-box">
-            <h2 style="margin-top:0;">Submit Your Form Here</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <input type="text" name="name" placeholder="Full Name (for certification)" required>
-                <input type="text" name="designation" placeholder="Designation" required>
-                <input type="text" name="hospital_company" placeholder="Hospital/Company" required>
-                <input type="tel" name="contact_number" placeholder="Professional Contact Number" required>
-                <input type="email" name="email" placeholder="Professional Email" required>
-                <select name="participation_type">
-                    <option value="Speaker">Speaker</option>
-                    <option value="Attendee">Attendee</option>
-                    <option value="Sponsorship">Sponsorship</option>
-                </select>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </section>
+    <h2 style="margin-top:0;">Submit Your Form Here</h2>
+    
+    <!-- Replace YOUR_FORM_ID with your actual ID from Formspree -->
+    <form action="https://formspree.io/f/xojrqooe" method="POST" id="summit-form">
+        
+        <input type="text" name="name" placeholder="Full Name (for certification)" required>
+        <input type="text" name="designation" placeholder="Designation" required>
+        <input type="text" name="hospital" placeholder="Hospital/Company" required>
+        <input type="tel" name="phone" placeholder="Professional Contact Number" required>
+        <input type="email" name="email" placeholder="Professional Email" required>
+        
+        <select name="type">
+            <option value="Speaker">Speaker</option>
+            <option value="Attendee">Attendee</option>
+            <option value="Sponsorship">Sponsorship</option>
+        </select>
+        
+        <button type="submit" class="btn">Submit Registration</button>
+    </form>
+    
+    <!-- This div is hidden at first and shows after they submit -->
+    <div id="thank-you-message" style="display:none; text-align:center; padding:20px; background:#e0f2fe; border-radius:8px; margin-top:20px;">
+        <h3 style="color:#002d5f;">Registration Received!</h3>
+        <p><strong>Next Process:</strong> Please check your inbox at `info@chance4connect.info` for your confirmation and summit toolkit within 24 hours.</p>
+    </div>
+</section>
+
+<script>
+  const form = document.getElementById('summit-form');
+  const message = document.getElementById('thank-you-message');
+
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      message.style.display = 'block';
+    } else {
+      alert("Oops! There was a problem submitting your form.");
+    }
+  };
+</script>
 
     </main>
 </body>
