@@ -73,12 +73,12 @@ body {
 
 .hero h1,
 .hero-premium h1 {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-dark: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero p,
 .hero-premium p {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-dark: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* ===========================
