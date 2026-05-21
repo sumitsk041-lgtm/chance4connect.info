@@ -32,6 +32,7 @@ body {
    =========================== */
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff !important;
 }
 
 .navbar-brand {
@@ -47,6 +48,7 @@ body {
     font-weight: 500;
     color: var(--text-dark) !important;
     transition: color 0.3s ease;
+    margin: 0 5px;
 }
 
 .nav-link:hover,
@@ -55,9 +57,10 @@ body {
 }
 
 /* ===========================
-   Hero Section
+   Hero Sections
    =========================== */
-.hero {
+.hero,
+.hero-premium {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -65,13 +68,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
-.hero h1 {
+.hero h1,
+.hero-premium h1 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.hero p {
+.hero p,
+.hero-premium p {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -109,6 +115,7 @@ section h3 {
 
 .event-card {
     overflow: hidden;
+    position: relative;
 }
 
 .event-card img {
@@ -121,13 +128,23 @@ section h3 {
     transform: scale(1.05);
 }
 
-.package-card {
-    border-left: 4px solid var(--primary-color);
+.ribbon-premium,
+.ribbon-hot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    z-index: 10;
 }
 
-.package-premium {
-    border-left-width: 6px;
-    transform: scale(1.02);
+.ribbon-hot {
+    background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
 }
 
 .service-card {
@@ -140,14 +157,23 @@ section h3 {
     transform: translateY(-3px);
 }
 
-.strength-card {
+.benefit-card,
+.mission-card,
+.strength-card,
+.testimonial-card {
     border-radius: 8px;
-    border-left: 4px solid var(--primary-color);
     transition: all 0.3s ease;
 }
 
-.strength-card:hover {
-    background-color: #e8f1ff !important;
+.benefit-card:hover,
+.mission-card:hover,
+.strength-card:hover,
+.testimonial-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.2) !important;
+}
+
+.strength-card {
+    border-left: 4px solid var(--primary-color);
 }
 
 /* ===========================
@@ -164,11 +190,18 @@ section h3 {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+    color: white;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn-outline-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+    color: white;
 }
 
 .btn-warning {
@@ -183,6 +216,7 @@ section h3 {
     background-color: #e0a800;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+    color: #000;
 }
 
 .btn-light {
@@ -193,6 +227,10 @@ section h3 {
 .btn-light:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.btn-sm {
+    font-weight: 600;
 }
 
 /* ===========================
@@ -215,16 +253,18 @@ section h3 {
 .form-label {
     color: var(--text-dark);
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 /* ===========================
    Typography
    =========================== */
+.display-3,
 .display-4,
 .display-5,
 .display-6 {
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -251,10 +291,27 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 20px rgba(0, 102, 204, 0.2) !important;
 }
 
-.stat-box h3 {
+.stat-box h3,
+.stat-number {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+}
+
+/* ===========================
+   Gradients
+   =========================== */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+/* ===========================
+   Team Section
+   =========================== */
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* ===========================
@@ -281,8 +338,14 @@ footer a:hover {
 }
 
 /* ===========================
-   Alert Styles
+   Badge & Alert Styles
    =========================== */
+.badge {
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
 .alert {
     border-radius: 8px;
     border: none;
@@ -302,30 +365,33 @@ footer a:hover {
         margin-top: 1rem;
     }
 
-    .display-4 {
+    .display-3 {
         font-size: 2rem;
     }
 
-    .display-5 {
+    .display-4 {
         font-size: 1.8rem;
     }
 
-    .package-premium {
-        transform: scale(1);
+    .display-5 {
+        font-size: 1.6rem;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .hero,
+    .hero-premium {
         min-height: 300px;
         padding: 60px 20px !important;
     }
 
-    .hero h1 {
+    .hero h1,
+    .hero-premium h1 {
         font-size: 1.8rem;
     }
 
-    .hero p {
+    .hero p,
+    .hero-premium p {
         font-size: 1rem;
     }
 
@@ -349,6 +415,12 @@ footer a:hover {
         padding: 0.8rem 1.5rem !important;
         font-size: 1rem !important;
     }
+
+    .ribbon-premium,
+    .ribbon-hot {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -356,16 +428,19 @@ footer a:hover {
         font-size: 0.95rem;
     }
 
-    .hero {
+    .hero,
+    .hero-premium {
         min-height: 250px;
         padding: 40px 15px !important;
     }
 
-    .hero h1 {
+    .hero h1,
+    .hero-premium h1 {
         font-size: 1.5rem;
     }
 
-    .hero p {
+    .hero p,
+    .hero-premium p {
         font-size: 0.9rem;
     }
 
@@ -374,12 +449,15 @@ footer a:hover {
         margin-bottom: 1.5rem;
     }
 
+    .display-3,
+    .display-4,
     .display-5,
     .display-6 {
         font-size: 1.4rem;
     }
 
-    .stat-box h3 {
+    .stat-box h3,
+    .stat-number {
         font-size: 2rem;
     }
 
@@ -388,6 +466,7 @@ footer a:hover {
         margin-right: -8px;
     }
 
+    .col-md-3,
     .col-md-4,
     .col-md-6 {
         padding-left: 8px;
@@ -403,6 +482,7 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
     }
 
     form {
@@ -411,6 +491,16 @@ footer a:hover {
 
     .card-body {
         padding: 1.5rem !important;
+    }
+
+    .team-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .service-icon,
+    .benefit-icon {
+        font-size: 2rem !important;
     }
 }
 
