@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global M&A Leadership Virtual Summit 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #050816;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(5,8,22,0.96), rgba(10,20,50,0.92)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .highlight {
+      color: #67b7ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #d2d8e6;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 32px;
+    }
+
+    .event-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 35px;
+    }
+
+    .info-card {
+      background: rgba(255,255,255,0.06);
+      padding: 18px 25px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      min-width: 180px;
+    }
+
+    .info-card h3 {
+      font-size: 14px;
+      color: #8aa9ff;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 16px;
+      color: white;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 15px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2d7cff, #5aa8ff);
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.18);
+      color: white;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .section-title p {
+      color: #c8d1e6;
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #0c1327;
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 28px;
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(103,183,255,0.4);
+    }
+
+    .card h3 {
+      margin-bottom: 14px;
+      color: #67b7ff;
+    }
+
+    .agenda {
+      background: #0a1022;
+    }
+
+    .agenda-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 24px;
+      background: #101933;
+      padding: 24px;
+      border-radius: 18px;
+      border-left: 4px solid #67b7ff;
+    }
+
+    .agenda-time {
+      min-width: 140px;
+      font-weight: 700;
+      color: #67b7ff;
+    }
+
+    .speaker-box {
+      background: linear-gradient(135deg, #0f1a35, #0b1020);
+      border-radius: 22px;
+      padding: 40px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .speaker-box h3 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .sponsor-section {
+      background: linear-gradient(135deg, #0b1125, #101b39);
+      border-radius: 24px;
+      padding: 50px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer {
+      padding: 40px 20px;
+      text-align: center;
+      background: #040711;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer p {
+      color: #98a5c3;
+    }
+
+    @media(max-width:768px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .agenda-item {
+        flex-direction: column;
+      }
+
+      .agenda-time {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="tag">Global Executive Virtual Summit 2026</div>
+      <h1>Global <span class="highlight">M&A Leadership</span><br>Virtual Summit 2026</h1>
+      <p>
+        A premium executive forum focused on AI-driven transactions, cross-border deals,
+        corporate growth strategy, legal innovation, and the future of global mergers & acquisitions.
+      </p>
+
+      <div class="event-info">
+        <div class="info-card">
+          <h3>Date</h3>
+          <p>August 2026</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Duration</h3>
+          <p>90 Minutes</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Format</h3>
+          <p>Virtual Executive Summit</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Platform</h3>
+          <p>Zoom Events</p>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#register" class="btn btn-primary">Register Now</a>
+        <a href="#agenda" class="btn btn-secondary">View Agenda</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>About The Summit</h2>
+        <p>
+          The Global M&A Leadership Virtual Summit 2026 brings together corporate lawyers,
+          investment bankers, private equity leaders, startup founders, and business strategists
+          to discuss the evolving landscape of mergers, acquisitions, and AI-powered corporate transformation.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>AI in Transactions</h3>
+          <p>
+            Explore how AI is transforming due diligence, contract intelligence,
+            compliance automation, and deal analytics.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Cross-Border Growth</h3>
+          <p>
+            Understand international dealmaking trends, regulatory complexity,
+            and global expansion opportunities.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Executive Networking</h3>
+          <p>
+            Connect with legal leaders, investors, consultants, and corporate decision-makers
+            from across industries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="agenda" id="agenda">
+    <div class="container">
+      <div class="section-title">
+        <h2>Summit Agenda</h2>
+        <p>Focused 90-minute executive discussion with actionable insights and strategic conversations.</p>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">5:00 PM – 5:05 PM</div>
+        <div>
+          <h3>Welcome & Opening Remarks</h3>
+          <p>Introduction to the summit, industry outlook, and executive networking opportunities.</p>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">5:05 PM – 5:20 PM</div>
+        <div>
+          <h3>Keynote: The Global M&A Landscape in 2026</h3>
+          <p>Emerging investment trends, AI-led corporate transformation, and global business expansion.</p>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">5:20 PM – 5:45 PM</div>
+        <div>
+          <h3>Panel Discussion: AI in Due Diligence & Transactions</h3>
+          <p>How artificial intelligence is reshaping legal workflows, risk analysis, and corporate transactions.</p>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">5:45 PM – 6:05 PM</div>
+        <div>
+          <h3>Executive Fireside Chat</h3>
+          <p>Cross-border dealmaking challenges, compliance strategies, and corporate negotiation insights.</p>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">6:05 PM – 6:20 PM</div>
+        <div>
+          <h3>Industry Spotlight Session</h3>
+          <p>Strategic industry insights from corporate partners and business transformation leaders.</p>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">6:20 PM – 6:30 PM</div>
+        <div>
+          <h3>Live Q&A & Closing Remarks</h3>
+          <p>Interactive audience discussion, final insights, and networking opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="speaker-box">
+        <h3>Who Should Attend?</h3>
+        <p>
+          Corporate Lawyers • Investment Bankers • Private Equity Firms • Venture Capital Leaders •
+          Startup Founders • General Counsels • CFOs • Compliance Professionals • Business Strategists
+        </p>
+      </div>
+
+      <div class="sponsor-section">
+        <h2>Partnership Opportunities</h2>
+        <p style="margin-top:20px; color:#c7d0e7; max-width:750px; margin-inline:auto;">
+          Position your brand alongside leading voices in mergers & acquisitions,
+          legal innovation, AI transformation, and corporate strategy.
+        </p>
+
+        <div class="btn-group" style="margin-top:30px;">
+          <a href="#" class="btn btn-primary">Become a Partner</a>
+          <a href="#" class="btn btn-secondary">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register">
+    <div class="container">
+      <div class="section-title">
+        <h2>Register For The Summit</h2>
+        <p>
+          Join industry leaders and global experts for an executive-level discussion on the future of M&A and corporate growth.
+        </p>
+      </div>
+
+      <div style="max-width:700px; margin:auto; background:#0d162d; padding:40px; border-radius:24px; border:1px solid rgba(255,255,255,0.06);">
+        <form>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+            <input type="text" placeholder="Full Name" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
+            <input type="email" placeholder="Email Address" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+            <input type="text" placeholder="Company Name" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
+            <input type="text" placeholder="Designation" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
+          </div>
+
+          <textarea placeholder="Message" rows="5" style="width:100%; padding:16px; border-radius:12px; border:none; background:#111d38; color:white; margin-bottom:20px;"></textarea>
+
+          <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer; width:100%;">
+            Submit Registration
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      © 2026 Chance 4 Connect | Global M&A Leadership Virtual Summit 2026
+    </p>
+  </footer>
+
+</body>
+</html>
