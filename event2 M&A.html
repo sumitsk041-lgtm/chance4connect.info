@@ -406,51 +406,85 @@
   </section>
 
  <section class="register" id="register">
-  <form action="https://api.sheetmonkey.io/form/5EcnFbp3378wZYvHjiTubp" method="POST">
-  <div class="container">
-      <div class="section-title">
-        <h2>Register For The Summit</h2>
-        <p>
-          Join industry leaders and global experts for an executive-level discussion on the future of M&A and corporate growth.
-        </p>
+  <div class="sm__form-container">
+  <div class="sm-form-header-container">
+    <h2 class="sm-form-title__header">Register For The Summit</h2>
+    <p class="sm-form-title__info">Join industry leaders and global experts for an executive-level discussion on the future of M&A and corporate growth.</p>
+  </div>
+
+  <div class="sm__form-card">
+    <form method="post" action="https://api.sheetmonkey.io/form/5EcnFbp3378wZYvHjiTubp" autoComplete="on" class="sm__form-actual">
+      
+      <input type="hidden" name="x-sheetmonkey-redirect" value="https://www.chance4connect.info/event2%20M&amp;A.html"/>
+
+      <div class="sm__form-grid">
+        
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="text" class="sm-field__input sm-field__input--text" name="First Name" placeholder="First Name" required=""/>
+          </div>
+        </div>
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="text" class="sm-field__input sm-field__input--text" name="Last Name" placeholder="Last Name" required=""/>
+          </div>
+        </div>
+
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="text" class="sm-field__input sm-field__input--text" name="Company Name" placeholder="Company Name" required=""/>
+          </div>
+        </div>
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="text" class="sm-field__input sm-field__input--text" name="Designation" placeholder="Designation" required=""/>
+          </div>
+        </div>
+
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="number" class="sm-field__input sm-field__input--text" name="Contact Number" placeholder="Contact Number" required=""/>
+          </div>
+        </div>
+        <div class="sm-field__wrapper">
+          <div class="sm-field sm-field--large">
+            <input type="email" class="sm-field__input sm-field__input--text" name="Email Address" placeholder="Email Address" autoComplete="email" required=""/>
+          </div>
+        </div>
+
+        <div class="sm__form-row-single">
+          <div class="sm-field__group-item">
+            <div class="sm-field sm-field--large">
+              <input type="text" class="sm-field__input sm-field__input--text" name="Location" placeholder="Location" required=""/>
+            </div>
+          </div>
+          <div class="sm-field__group-item">
+            <div class="sm-field sm-field--large">
+              <select name="Participation Type" class="sm-field__input sm-field__select" required>
+                <option value="" disabled selected>Attendee</option> <option value="Speaker">Speaker</option>
+                <option value="Attendee">Attendee</option>
+                <option value="Sponsorship">Sponsorship</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm-field__wrapper sm__form-row-single">
+          <div class="sm-field sm-field--large">
+            <textarea class="sm-field__input sm-field__input--textarea" name="Message" placeholder="Message" rows="5"></textarea>
+          </div>
+        </div>
+
+        <div class="sm-actions__container">
+          <button type="submit" class="sm-btn--primary">Submit Registration</button>
+        </div>
+
       </div>
-
-      <div style="max-width:700px; margin:auto; background:#0d162d; padding:40px; border-radius:24px; border:1px solid rgba(255,255,255,0.06);">
-        <form>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
-            <input type="text" placeholder="First Name" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-            <input type="text" placeholder="Last Name" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
-            <input type="email" placeholder="Email Address" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-            <input type="text" placeholder="Designation" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">            
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
-            <input type="text" placeholder="Company" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-            <input type="text" placeholder="Location" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
-            <input type="tel" placeholder="Contact Number" style="padding:16px; border-radius:12px; border:none; background:#111d38; color:white;">
-            <select name="Participation Type">
-                    <option value="Speaker">Speaker</option>
-                    <option value="Attendee" selected>Attendee</option>
-                    <option value="Sponsorship">Sponsorship</option>
-                </select>
-          </div>
-
-          <textarea placeholder="Message" rows="5" style="width:100%; padding:16px; border-radius:12px; border:none; background:#111d38; color:white; margin-bottom:20px;"></textarea>
-
-          <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer; width:100%;">
-            Submit Registration
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
+    </form>
+    <div class="sm-branding-footer"><a href="https://sheetmonkey.io/form-builder?ref=form" target="_blank">Made with Sheet Monkey</a></div>
+  </div>
+</div>
+</section>
 
   <footer class="footer">
     <p>
